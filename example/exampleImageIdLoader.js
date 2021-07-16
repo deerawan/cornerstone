@@ -29,8 +29,17 @@
     var image2PixelData = getPixelData(image109Base64);
 
     function getExampleImage(imageId) {
-        const width = 256;
-        const height = 256;
+        // let width = 256;
+        // let height = 256;
+
+        // let columnPixelSpacing = .8984375;
+        // let rowPixelSpacing = .8984375;
+
+        let width = 512;
+        let height = 44;
+
+        let rowPixelSpacing = 2.887;
+        let columnPixelSpacing = 0.488281;
 
         function getPixelData () {
             if(imageId === 'example://1') {
@@ -56,8 +65,8 @@
             height: height,
             width: width,
             color: false,
-            columnPixelSpacing: .8984375,
-            rowPixelSpacing: .8984375,
+            columnPixelSpacing: columnPixelSpacing,
+            rowPixelSpacing: rowPixelSpacing,
             sizeInBytes: width * height * 2
         };
 
